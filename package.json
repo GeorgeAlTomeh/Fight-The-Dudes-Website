@@ -1,0 +1,32 @@
+{
+  "name": "fight-the-dudes",
+  "version": "1.0.0",
+  "description": "a game made by ScrewCrew",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "clear && node src/server.js",
+    "dev": "clear && nodemon src/server.js",
+    "reactDev": "clear && nodemon src/reactViewSystem.js"
+  },
+  "author": "George Tomeh",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cookies-parser": "^1.2.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-react-views": "^0.11.0",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.1",
+    "formidable": "^3.5.4",
+    "hbs": "^4.2.0",
+    "pug": "^3.0.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

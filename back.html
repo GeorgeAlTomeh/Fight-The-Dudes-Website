@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight The Dudes</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <style type="text/css" media="all">
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: System-UI;
+      }
+      body{
+        background-color: #001220;
+        overflow-x: hidden;
+      }
+      a{
+        color: #ffeeef;
+        text-decoration: none; /* Remove underline from all links */
+      }
+      a:hover {
+        opacity: 0.8; /* Add hover effect to indicate clickability */
+      }
+      div.head{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: #223442 1px solid;
+        padding: 10px;
+        height: 7%;
+        width: 100vw;
+        position: fixed;
+        background-color: #001220;
+        z-index: 1000; /* Ensure header stays on top */
+      }
+      a.logo img{
+        border-radius: 50%;
+      }
+      div.head div.left, div.head div.right {
+        text-align: center;
+        color: #ffeeef;
+        font-size: 6vw;
+      }
+      .left{
+        width: 35%;
+      }
+      .right{
+        width: 65%;
+      }
+      div.left, div.right{
+        display: flex;
+        justify-content: space-between;
+      }
+      .l,.r{
+        width: 50%;
+        margin-top: 2vh;
+      }
+      .l svg, .r svg{
+        width: 50%;
+      }
+      .logo, .name{
+        text-align: center;
+      }
+      .logo{
+        width: 35%;
+      }
+      .name{
+        width: 65%;
+      }
+      div.body{
+        height: 80vh;
+        padding-top: 10%; /* Add padding to account for fixed header */
+      }
+      div.container{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+      div.gradienrBetweenBodyAndFooter{
+        position: relative;
+        top: 20vh;
+      }
+      #visual{
+        width: 100vw;
+        transform: scale(1.4);
+      }
+      .body{
+        width: 80%;
+        margin: auto;
+      }
+      .body img{
+        width: 100%;
+        margin-top: 27%; /* Reduced margin f */
+      }
+      .title{
+        text-align: center;
+        color: #e61e1e;
+      }
+      .l3y{
+        text-align: center;
+        color: #f35447;
+      }
+      .btn{
+        display: block; /* Changed to block for proper centering */
+        color: #ffeeef;
+        border: none;
+        background-color: #f35447;
+        width: 60%;
+        padding: max(10px,2.25vh);
+        margin: auto;
+        outline: none;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer; /* Add pointer cursor to indicate clickability */
+      }
+      div.footer{
+        background-color: #e61e1e;
+        height: 20vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="head">
+        
+        <div class="left">
+          <a class="logo" href="#"><img width="120%" src="http://localhost:8080/download" alt="logo" /></a>
+          <h5 class="name">Screw Crew</h5>
+        </div>
+        
+        <div class="right">
+          <h6 class="l">
+            <a href="http://localhost:8080/download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+            </svg>
+            </a>
+          </h6>
+          <h6 class="r"><a href="mailto:screwcrew16@gmail.com?subject=-Fight%20The%20Dudesf%20Feedback">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+            </svg>
+            </a>
+          </h6>
+          
+        </div>
+        
+      </div>
+      
+      <div class="body">
+        
+        <img src="http://localhost:8080/download" width="80%" />
+        
+        <br />
+        <br />
+        
+        <h3 class="title">-Fight The Dudes-</h3>
+        <br />
+        <p class="l3y">-Fight The Dudes- is game<br /> made by a group of teens<br /> that have made Screw Crew<br /> as the first game<br /> that they have made together <br />so your feedback<br /> makes a difference to us</p>
+        
+        <br />
+        <br />
+        <br />
+        <div class="centerer">
+          <a class="btn" href="http://localhost:8080/d">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+            </svg> Download
+          </a>
+        </div>
+        <br /> 
+        <br />
+        <div class="centerer">
+        <a class="btn" href="mailto:screwcrew16@gmail.com?subject=-Fight%20The%20Dudes-%20Feedback">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+            </svg> Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="gradienrBetweenBodyAndFooter">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#001220"></rect><path d="M0 368L16.7 367.8C33.3 367.7 66.7 367.3 100 374.3C133.3 381.3 166.7 395.7 200 404C233.3 412.3 266.7 414.7 300 413.8C333.3 413 366.7 409 400 404.5C433.3 400 466.7 395 500 394.2C533.3 393.3 566.7 396.7 600 394.7C633.3 392.7 666.7 385.3 700 381.5C733.3 377.7 766.7 377.3 800 376.3C833.3 375.3 866.7 373.7 883.3 372.8L900 372L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#ff8d82"></path><path d="M0 435L16.7 437.8C33.3 440.7 66.7 446.3 100 441.5C133.3 436.7 166.7 421.3 200 420.7C233.3 420 266.7 434 300 438.2C333.3 442.3 366.7 436.7 400 437.2C433.3 437.7 466.7 444.3 500 448C533.3 451.7 566.7 452.3 600 449C633.3 445.7 666.7 438.3 700 434.2C733.3 430 766.7 429 800 428.7C833.3 428.3 866.7 428.7 883.3 428.8L900 429L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#fc7b6e"></path><path d="M0 451L16.7 451.3C33.3 451.7 66.7 452.3 100 450.3C133.3 448.3 166.7 443.7 200 444C233.3 444.3 266.7 449.7 300 455.5C333.3 461.3 366.7 467.7 400 465.7C433.3 463.7 466.7 453.3 500 450.7C533.3 448 566.7 453 600 457.7C633.3 462.3 666.7 466.7 700 466.5C733.3 466.3 766.7 461.7 800 463C833.3 464.3 866.7 471.7 883.3 475.3L900 479L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#f8685b"></path><path d="M0 497L16.7 495.2C33.3 493.3 66.7 489.7 100 491.7C133.3 493.7 166.7 501.3 200 501.7C233.3 502 266.7 495 300 494.3C333.3 493.7 366.7 499.3 400 502.3C433.3 505.3 466.7 505.7 500 505.3C533.3 505 566.7 504 600 501C633.3 498 666.7 493 700 490.3C733.3 487.7 766.7 487.3 800 485C833.3 482.7 866.7 478.3 883.3 476.2L900 474L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#f35447"></path><path d="M0 529L16.7 529.7C33.3 530.3 66.7 531.7 100 530.5C133.3 529.3 166.7 525.7 200 521.8C233.3 518 266.7 514 300 514.3C333.3 514.7 366.7 519.3 400 521C433.3 522.7 466.7 521.3 500 522.2C533.3 523 566.7 526 600 528.3C633.3 530.7 666.7 532.3 700 531.7C733.3 531 766.7 528 800 524.3C833.3 520.7 866.7 516.3 883.3 514.2L900 512L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#ed3d33"></path><path d="M0 555L16.7 553.8C33.3 552.7 66.7 550.3 100 550.8C133.3 551.3 166.7 554.7 200 556.7C233.3 558.7 266.7 559.3 300 559.8C333.3 560.3 366.7 560.7 400 559.2C433.3 557.7 466.7 554.3 500 555C533.3 555.7 566.7 560.3 600 559.2C633.3 558 666.7 551 700 547.8C733.3 544.7 766.7 545.3 800 548.3C833.3 551.3 866.7 556.7 883.3 559.3L900 562L900 601L883.3 601C866.7 601 833.3 601 800 601C766.7 601 733.3 601 700 601C666.7 601 633.3 601 600 601C566.7 601 533.3 601 500 601C466.7 601 433.3 601 400 601C366.7 601 333.3 601 300 601C266.7 601 233.3 601 200 601C166.7 601 133.3 601 100 601C66.7 601 33.3 601 16.7 601L0 601Z" fill="#e61e1e"></path></svg>
+      </div>
+      
+      <div class="footer">
+        hi
+      </div>
+    
+    </div>
+  </body>
+</html>
