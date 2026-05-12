@@ -8,7 +8,7 @@ I used Node.js for the server which uses ejs to create the page responses
 
 Licence 
 
-This project is under MIT License 
+This project is under the MIT License.
 
 Author
 
