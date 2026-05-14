@@ -14,7 +14,7 @@ app.set('views', __dirname + '/../views');
 
 const home = (req, res) => 
 {
-  res.redirect('http://localhost:8080/en');
+  res.redirect('https://fight-the-dudes-website.onrender.com/en');
 }
 
 const en = (req, res) => 
@@ -39,7 +39,7 @@ const sy = (req, res) =>
 
 const download = (req, res) => 
 {
-  res.download(__dirname+"/screwCrew.png",'screwCrew.png');
+  res.redirect('');
 }
 
 app.get('/', home);
