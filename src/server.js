@@ -42,6 +42,11 @@ const download = (req, res) =>
   res.redirect('');
 }
 
+const img = (req, res) => 
+{
+  res.download(__dirname+'ScrewCrew.png', 'ScrewCrew.png');
+}
+
 app.get('/', home);
 app.get('/en', en);
 app.get('/ar', ar);
@@ -49,6 +54,8 @@ app.get('/fr', fr);
 app.get('/sy', sy);
 
 app.get('/download', download);
+
+app.get('/img', img);
 
 app.listen('8080', () => {
   console.log('listening at port 8080');
