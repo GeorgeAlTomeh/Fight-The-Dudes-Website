@@ -44,7 +44,7 @@ const download = (req, res) =>
 
 const image = (req, res) => 
 {
-  res.download(__dirname+'screwCrew.png', 'screwCrew.png');
+  res.download(__dirname+'/screwCrew.png', 'screwCrew.png');
 }
 
 app.get('/', home);
